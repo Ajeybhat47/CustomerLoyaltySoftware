@@ -177,14 +177,6 @@ public:
             cout << i << endl;
         }
     }
-    void print_products()
-    {
-        for (auto i : top_items)
-        {
-            cout << "hi" << endl;
-        }
-    }
-    // friend print_top()
 };
 
 class Reward
@@ -296,16 +288,10 @@ public:
         c.print();
     }
 
-    void topProducts(CLS c)
-    {
-        c.print_products();
-    };
-
     Customer create_customer();
 };
 inline void welcomeBanner()
 {
-
     system("cls");
     cout << "**********************************************\n";
     cout << "     Welcome to Customer Loyalty Software     \n";
@@ -322,7 +308,8 @@ namespace Ajey
             if (!file.is_open())
             {
                 cout << "Failed to open the file." << endl;
-                // return 1;
+                Customer c1;
+                return c1;
             }
             string line;
 
@@ -458,10 +445,10 @@ namespace Ajey
             getline(iss, field, ',');
             int diamond_limit = stoi(field);
 
-            cout << "bronze=" << bronze_limit << endl;
-            cout << "silver=" << silver_limit << endl;
-            cout << "gold=" << gold_limit << endl;
-            cout << "diamond=" << diamond_limit << endl;
+            // cout << "bronze=" << bronze_limit << endl;
+            // cout << "silver=" << silver_limit << endl;
+            // cout << "gold=" << gold_limit << endl;
+            // cout << "diamond=" << diamond_limit << endl;
 
             file.close();
             if (pts < bronze_limit)
