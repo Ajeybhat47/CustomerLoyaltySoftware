@@ -12,4 +12,4 @@ Can register as new customer. After registering, they can type the customer who 
 After login as existing customer, user can buy products and according to the price and quantity ,they would gain points.
 After reaching a specified loyalty point amount, they would be promoted to higher league tier (specified in leaguetier.csv).
 User can also check their payment history.
-User can also trade their loyalty points for money.  
+User can also trade their loyalty points for money. 
